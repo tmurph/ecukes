@@ -80,6 +80,7 @@
 
 (defun ecukes-cli/list-steps ()
   "Print all available steps defined for this project."
+  (ecukes-load-support)
   (ecukes-load-step-definitions)
   (ecukes-reporter-print-steps ecukes-cli-with-doc ecukes-cli-with-file))
 
